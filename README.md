@@ -6,3 +6,8 @@ Basic understanding and use of array's using C sharp. \
 
 City locater game using C# \
 [Assignment 2](https://github.com/Andrew2486/Portfolio/blob/Projects/Assignment%202%20(City%20guess%20game).txt)
+
+
+
+
+Portfolio link (on GitHub using GitHub Pages)  - static HTML/CSS (JavaScript optional) website with a About you, Contact, & Portfolio/Experience web pages. The experience show showcase at least THREE pieces of work
