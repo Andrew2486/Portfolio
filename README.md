@@ -1,6 +1,6 @@
 ## Welcome to Andrew's portfolio
 
-
+Basic understanding and use of array's using C sharp.
 [Assignment 1](https://github.com/Andrew2486/Portfolio/blob/Projects/Assigment%201%20(Working%20with%20arrays).txt)
 
 
