@@ -1,0 +1,55 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using static System.Console;
+
+namespace Assignment_1
+
+
+ // Purpose: to take tempatures from user for two arrays then compair
+ // both arrays to find matching numbers
+
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Intersection();
+        }
+        static void Intersection()
+        {
+            WriteLine("Please enetr number spacced out by commas or fullstops (,)(.)");
+            string line1 = ReadLine();
+            string[] line1Split = line1.Split(',', '.', ' ');
+            int maxLine1 = line1Split.Length;
+            double[] num1 = new double[maxLine1];
+            for (int i = 0; i < line1Split.Length; i++)
+            {
+                num1[i] = double.Parse(line1Split[i]);
+            }
+
+
+            WriteLine("Please enter the second line of numbers same rules as the first line");
+            string line2 = ReadLine();
+            string[] line2Split = line2.Split(',', '.', ' ');
+            int maxLine2 = line2Split.Length;
+            double[] num2 = new double[maxLine2];
+            for (int e = 0; e < line2Split.Length; e++)
+            {
+                num2[e] = double.Parse(line1Split[e]);
+            }
+            int count = 0;
+            foreach (int a in num1)
+            {
+                if (num2.Contains(a))
+                {
+                    count++;
+
+                }                    
+            }
+            WriteLine($"The ammount of numbers that are overlapping are: {count}");
+        }
+    }
+}
