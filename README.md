@@ -1,7 +1,7 @@
 ## Welcome to Andrew's portfolio
 
 Basic understanding and use of array's using C sharp.
-[Assignment 1](https://github.com/Andrew2486/Portfolio/blob/Projects/Assigment%201%20(Working%20with%20arrays).txt)
+[Assignment 1](https://github.com/Andrew2486/Portfolio/blob/6802286c86618238a3b82ea84ae6638c7c712714/Assigment%201%20(Working%20with%20arrays).txt)
 
 
 You can use the [editor on GitHub](https://github.com/Andrew2486/Portfolio/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
