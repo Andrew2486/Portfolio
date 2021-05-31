@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using static System.Console;
+
+namespace Assignment_6
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            WriteLine("Can you guess the country of these capitals");
+            WriteLine("You have 3 chances to guess each country by seperating each country by commas");
+            WriteLine("An example is what is the capital of new zealand answer: Auckland,Hamilton,Wellington");
+
+            string[] countrynames = new string[] { "Greece", "Thailand", "China", "Germany", "Netherlands", "Turkey" };
+            string[] capitals = new string[] { "Athens", "Bangkok", "Beijing", "Berlin", "Amsterdam", "Ankara" };
+            var rand = new Random().Next(0, capitals.Length); // assuming it can be more than 5
+            string randomCapital = capitals[rand];
+            var correspondingRandomCountry = countrynames[rand]; // assuming your country array is in the righ order
+
+            Console.WriteLine("Which country has the capital city {0}? ", randomCapital);
+            Console.WriteLine("Enter up to 3 names, comma-seperated: ");
+            string userinput = Console.ReadLine();
+            string[] temp = userinput.Split(',');
+            var rightOrWrongString = temp.Any(t => t.ToLower().Equals(correspondingRandomCountry.ToLower())) == true ? "right answer" : "wrong answer";
+            Console.WriteLine("total no: of guesses made {0} - Result: {1}", temp.Length, rightOrWrongString);
+
+        }
+    }
+}
