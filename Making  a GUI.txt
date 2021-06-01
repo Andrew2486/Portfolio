@@ -1,0 +1,80 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace GUI_Andrew_law
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+
+        public bool Checkprime(int n)
+        {
+            bool b = true;
+            if (n <= 1) // Removes 1 from prime numbers as well as negatives
+                b = false;
+            for (int i = 2; i <= Math.Sqrt(n); i++)
+            {
+                if (n % i == 0)
+                {
+                    b = false;
+                    break;
+                }
+            }     
+            return (b);
+        }
+
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int num1, num2;
+            num1 = Int32.Parse(textBox1.Text);
+            num2 = Int32.Parse(textBox2.Text);
+            int count = 1;
+            string s = "";
+            for (int i = num1; i <= num2; i++)
+            {
+                if (Checkprime(i) == true)
+                {
+                    s += i.ToString() + ", ";
+                    if (count % 5 == 0) s += "\r\n";// Does the Newline
+                    count++;
+                }
+            }
+            textBox3.Text = s;
+        }
+ 
+
+
+        public void GetPrimeNum(int lower, int upper)
+        {
+            for (int i = lower; i <= upper; i++)
+            {
+                if (Checkprime(i))
+                {
+                   
+                        textBox3.Text += i + ", ";
+                }
+            }
+        }
+
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            textBox1.Clear();
+            textBox2.Clear();
+            textBox3.Clear();
+            // Clears all 3 text boxes makes testing a little faster
+        }
+    }
+}
