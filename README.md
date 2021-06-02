@@ -14,6 +14,3 @@ City locater game using C# \
 
 Finds prime numbers using a GUI \
 [Prime numbers in GUI](https://github.com/Andrew2486/Portfolio/blob/Projects/Making%20%20a%20GUI.txt)
-
-
-Portfolio link (on GitHub using GitHub Pages)  - static HTML/CSS (JavaScript optional) website with a About you, Contact, & Portfolio/Experience web pages. The experience show showcase at least THREE pieces of work
