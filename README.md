@@ -1,6 +1,6 @@
 ## Welcome to Andrew's portfolio
 
-I am Andrew, I am currently a student studying at Waikato Institute of Technology. I am passionate about what i do at my job and outside of it. 
+I am Andrew, I am currently a student studying at Waikato Institute of Technology. I am passionate about what I do at my job and outside of it. 
 I have experience working in group projects and as an individual. I can work well under pressure. \
 
 You can contact me at aemail@hotmail.com
